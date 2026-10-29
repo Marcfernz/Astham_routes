@@ -1,0 +1,17 @@
+{
+  "outputStyle": "Learning",
+  "permissions": {
+    "defaultMode": "default",
+    "disableBypassPermissionsMode": "disable",
+    "blockReadsOutsideWorkingDirectories": true,
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Bash(rm -rf *)",
+      "Bash(curl *)",
+      "Bash(wget *)"
+    ],
+    "ask": ["Bash(npm install *)"],
+    "allow": ["Bash(npm run *)", "Bash(npm test *)"]
+  }
+}
